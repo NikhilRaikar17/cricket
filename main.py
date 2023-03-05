@@ -20,4 +20,4 @@ def commentary():
 
 
 if __name__ == "__main__":
-    app.run(host='172.17.1.162')
+    app.run(host='0.0.0.0')
