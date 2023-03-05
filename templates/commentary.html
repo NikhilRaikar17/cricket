@@ -31,6 +31,9 @@
   var summaryList = document.getElementById('summaryList');
   var constant = 0
   var overs = 0.1
+  var result = ["dot", "one","two", "three", "four", "six", "out"]
+  var wdbw = ["mid-off", "mid-on","cover", "long-on"]
+  var tpob = ["bouncer", "yorker","inswinger"]
 
   function fetchSummaries() {
       if (constant == 0.6){
@@ -100,9 +103,9 @@
                               }
                           },
                           "outcome": {
-                              "result": "six",
-                              "wdbw": "mid-off",
-                              "tpob": "yorker"
+                              "result": result[Math.floor(Math.random() * result.length)],
+                              "wdbw": wdbw[Math.floor(Math.random() * wdbw.length)],
+                              "tpob": tpob[Math.floor(Math.random() * tpob.length)],
                           }
                       }
                   }
